@@ -1,0 +1,51 @@
+[
+    {
+      "_id": 1,
+      "Given": "prasad",
+      "Family": "bobillla",
+      "Email": "pbobilla@nwmissouri.edu",
+      "Salary": 70000,
+      "GitHub": "https://github.com/pbobilla"
+    },
+    {
+      "_id": 2,
+      "Given": "pranay",
+      "Family": "Allikanti",
+      "Email": "pallikanti@nwmissouri.edu",
+      "Salary": 70000,
+      "GitHub": "https://github.com/pallikanti"
+    },
+    {
+        "_id": 3,
+        "Given": "abilash",
+        "Family":"bollam",
+        "Email": "abollam@nwmissouri.edu",
+        "Salary": 70000,
+        "GitHub": "https://github.com/abollam"
+      },
+      {
+        "_id": 4,
+        "Given": "suma",
+        "Family": "soma",
+        "Email": "soma@nwmissouri.edu",
+        "Salary": 70000,
+        "GitHub": "https://github.com/ssoma"
+      },
+      {
+        "_id": 5,
+        "Given": "mohan",
+        "Family": "Pratapa",
+        "Email": "mpratapa@nwmissouri.edu",
+        "Salary": 70000,
+        "GitHub": "https://github.com/mpratapa"
+      },
+      {
+        "_id": 6,
+        "Given": "naveen",
+        "Family": "Gajavalli",
+        "Email": "ngajavalli@nwmissouri.edu",
+        "Salary": 70000,
+        "GitHub": "https://github.com/ngajavalli"
+      }
+  ]
+  
