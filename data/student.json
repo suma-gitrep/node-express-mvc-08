@@ -1,0 +1,64 @@
+[
+    {
+      "_id": 10,
+      "email": "suma@nwmissouri.edu",
+      "given": "suma",
+      "family": "soma",
+      "gpa": 4,
+      "github": "https://github.com/",
+      "website": "https://somewebsite.com/",
+      "sectionid": 1
+     
+    },
+    {
+        "_id": 11,
+        "email": "prasad@nwmissouri.edu",
+        "given": "prasad",
+        "family": "sai",
+        "gpa": 4,
+        "github": "https://github.com/",
+        "website": "https://somewebsite.com/",
+        "sectionid": 2
+    },
+    {
+        "_id": 12,
+        "email": "mohan@nwmissouri.edu",
+        "given": "mohan siva",
+        "family": "venkata",
+        "gpa": 4,
+        "github": "https://github.com/",
+        "website": "https://somewebsite.com/",
+        "sectionid": 2
+    },
+    {
+        "_id": 13,
+        "email": "naveen@nwmissouri.edu",
+        "given": "naveen",
+        "family": "sai",
+        "gpa": 4,
+        "github": "https://github.com/",
+        "website": "https://somewebsite.com/",
+        "sectionid": 2
+    },
+    {
+        "_id": 14,
+        "email": "priyanka@nwmissouri.edu",
+        "given": "priyanka",
+        "family": "priya",
+        "gpa": 4,
+        "github": "https://github.com/",
+        "website": "https://somewebsite.com/",
+        "sectionid": 4
+    },
+    {
+        "_id": 15,
+        "email": "jeevan@nwmissouri.edu",
+        "given": "jeevan",
+        "family": "mure",
+        "gpa": 4,
+        "github": "https://github.com/",
+        "website": "https://somewebsite.com/",
+        "sectionid": 3
+    }
+  ]
+  
