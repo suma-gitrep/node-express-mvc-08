@@ -2,13 +2,12 @@
 *  Developer controller
 *  Handles requests related to developer resources.
 *
-* 
-* @author Suma Soma <s537239@nwmissouri.edu>
+* @author Denise Case <dcase@nwmissouri.edu>
 *
 */
 const express = require('express')
 const api = express.Router()
-const Model = require('../models/student.js')
+const Model = require('../models/course.js')
 
 const find = require('lodash.find')
 const notfoundstring = 'Could not find student with id='
@@ -18,7 +17,7 @@ const notfoundstring = 'Could not find student with id='
 // GET all JSON
 api.get('/findall', (req, res) => {
   res.setHeader('Content-Type', 'application/json')
-  const data = req.app.locals.students.query
+  const data = req.app.locals.courses.query
   res.send(JSON.stringify(data))
 })
 
@@ -26,7 +25,7 @@ api.get('/findall', (req, res) => {
 api.get('/findone/:id', (req, res) => {
   res.setHeader('Content-Type', 'application/json')
   const id = parseInt(req.params.id)
-  const data = req.app.locals.students.query
+  const data = req.app.locals.courses.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring + id) }
   res.send(JSON.stringify(item))

@@ -1,0 +1,59 @@
+[
+    {
+      "_id": 1,
+      "schoolnumber": "44",
+      "coursenumber": "563",
+      "name": "Web Apps",
+      "inspring": true,
+      "insummer": false,
+      "infall": true
+     
+    
+    },
+    {
+        "_id": 2,
+        "schoolnumber": "44",
+        "coursenumber": "566",
+        "name": "Data Base Systems",
+        "inspring": true,
+        "insummer": false,
+        "infall": true
+    },
+    {
+        "_id": 3,
+        "schoolnumber": "44",
+        "coursenumber": "363",
+        "name": "Big Data",
+        "inspring": true,
+        "insummer": false,
+        "infall": false
+    },
+    {
+        "_id": 4,
+      "schoolnumber": "44",
+      "coursenumber": "263",
+      "name": "IOS",
+      "inspring": true,
+      "insummer": true,
+      "infall": false
+    },
+    {
+        "_id": 5,
+      "schoolnumber": "44",
+      "coursenumber": "163",
+      "name": "Android",
+      "inspring": true,
+      "insummer": false,
+      "infall": false
+    },
+    {
+        "_id": 6,
+        "schoolnumber": "44",
+        "coursenumber": "563",
+        "name": "OOPS",
+        "inspring": true,
+        "insummer": true,
+        "infall": true
+    }
+  ]
+  

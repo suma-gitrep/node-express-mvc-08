@@ -3,7 +3,7 @@ const developerData = require('../data/developers.json') // read in data file
 const StudentData = require('../data/student.json')
 const instructorData=require('../data/instructor.json')
 const sectionData=require('../data/section.json')
-
+const courseData=require('../data/course.json')
 // inject Express app to configure it - EVERYTHING in through argument list
 
 module.exports = (app) => {
@@ -15,12 +15,14 @@ module.exports = (app) => {
   db.students = new Datastore()
   db.instructors=new Datastore()
   db.sections=new Datastore()
-
+  db.courses=new Datastore()
   // insert the sample data into our datastore
   db.developers.insert(developerData)
   db.students.insert(StudentData)
   db.instructors.insert(instructorData)
   db.sections.insert(sectionData)
+  db.courses.insert(courseData)
+
 
 
   // initialize app.locals (these objects are available to the controllers)
@@ -29,12 +31,15 @@ module.exports = (app) => {
   app.locals.instructors = db.instructors.find(instructorData)
   app.locals.sections = db.sections.find(sectionData)
 
+  app.locals.courses = db.courses.find(courseData)
 
 
   console.log(`${app.locals.developers.query.length} developers seeded`)
   console.log(`${app.locals.students.query.length} students seeded`)
   console.log(`${app.locals.instructors.query.length} instructors seeded`)
   console.log(`${app.locals.sections.query.length} sections seeded`)
+  console.log(`${app.locals.courses.query.length} courses seeded`)
+
 
 
   console.log('END Data Seeder. Sample data read and verified.')
