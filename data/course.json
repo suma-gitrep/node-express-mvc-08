@@ -3,7 +3,7 @@
       "_id": 1,
       "schoolnumber": "44",
       "coursenumber": "563",
-      "name": "Web Apps",
+      "name": "Development in Web Apps",
       "inspring": true,
       "insummer": false,
       "infall": true
@@ -50,7 +50,7 @@
         "_id": 6,
         "schoolnumber": "44",
         "coursenumber": "563",
-        "name": "OOPS",
+        "name": "java",
         "inspring": true,
         "insummer": true,
         "infall": true
