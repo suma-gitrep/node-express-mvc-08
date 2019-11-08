@@ -53,7 +53,7 @@ api.get('/create', (req, res) => {
 api.get('/delete/:id', (req, res) => {
   const id = parseInt(req.params.id)
   const data = req.app.locals.students.query
-  const item = findOneAndDelete(data, { _id: id })
+  const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring + id) }
   res.render('student/delete', {
     student: item
