@@ -1,0 +1,48 @@
+<!-- main - a row holds columns -->
+<div class=row>
+  <div class="col col-xs-12">
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" value="<%= instructor.Email %>" required>
+    </div>
+
+    <div class="form-group">
+      <label for="given">Given name</label>
+      <input type="text" class="form-control" id="given" name="given" value="<%= instructor.Given %>">
+    </div>
+
+    <div class="form-group">
+      <label for="family">Family name</label>
+      <input type="text" class="form-control" id="family" name="family" value="<%= instructor.Family %>">
+    </div>
+
+   
+
+
+    <div class="form-group">
+      <label for="salary">Salary </label>
+      <input type="number" class="form-control" id="salary" name="salary" value="<%= instructor.Salary %>">
+    </div>
+
+    <div class="form-group">
+      <label for="gitHub">GitHub </label>
+      <input type="text" class="form-control" id="GitHub" name="GitHub" value="<%= instructor.GitHub %>">
+    </div>
+
+  </div>
+</div>
+
+<!-- PUT CLIENT SIDE CODE HERE -->
+<script>
+ 
+  // prevent submission when hitting enter key - optional, but user-friendly 
+  document.forms[0].onkeypress = function (e) {
+    var key = e.charCode || e.keyCode || 0;
+    if (key == 13) {
+      e.preventDefault();
+    }
+  }
+
+// END CLIENT SIDE CODE  (close the script tag)
+</script>

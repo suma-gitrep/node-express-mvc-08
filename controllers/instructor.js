@@ -7,9 +7,10 @@
 */
 const express = require('express')
 const api = express.Router()
-const Model = require('../models/instructor.js')
+const InstructorSchema = require('../models/instructor.js')
+
 const find = require('lodash.find')
-const notfoundstring = 'Could not find developer with id='
+const notfoundstring = 'Could not find instructor with id='
 
 // RESPOND WITH JSON DATA  --------------------------------------------
 
@@ -34,16 +35,16 @@ api.get('/findone/:id', (req, res) => {
 
 //GET to this controller base URI (the default)
 api.get('/', (req, res) => {
-  res.render('developer/index.ejs', {
-    developers: req.app.locals.instructors.query
+  res.render('instructor/index.ejs', {
+    instructors: req.app.locals.instructors.query
   })
 })
 
 // GET create
 api.get('/create', (req, res) => {
-  res.render('developer/create', {
-    developers: req.app.locals.instructors.query,
-    developer: new Model()
+  res.render('instructor/create', {
+    instructors: req.app.locals.instructors.query,
+    instructor: new InstructorSchema()
   })
 })
 
@@ -53,8 +54,8 @@ api.get('/delete/:id', (req, res) => {
   const data = req.app.locals.instructors.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring + id) }
-  res.render('developer/delete', {
-    developer: item
+  res.render('instructor/delete', {
+    instructor: item
   })
 })
 
@@ -64,8 +65,8 @@ api.get('/details/:id', (req, res) => {
   const data = req.app.locals.instructors.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring + id) }
-  res.render('developer/details', {
-    developer: item
+  res.render('instructor/details', {
+    instructor: item
   })
 })
 
@@ -75,8 +76,8 @@ api.get('/edit/:id', (req, res) => {
   const data = req.app.locals.instructors.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring + id) }
-  res.render('developer/edit', {
-    developer: item
+  res.render('instructor/edit', {
+    instructor: item
   })
 })
 
@@ -86,16 +87,15 @@ api.get('/edit/:id', (req, res) => {
 api.post('/save', (req, res) => {
   console.info(`Handling POST ${req}`)
   console.debug(JSON.stringify(req.body))
-  const item = new Model()
+  const item = new InstructorSchema()
   console.info(`NEW ID ${req.body._id}`)
   item._id = parseInt(req.body._id)
-  item.email = req.body.email
-  item.given = req.body.given
-  item.family = req.body.family
-  item.city = req.body.city
-  item.state = req.body.state
-  item.zip = req.body.zip
-  item.country = req.body.country
+  item.Email = req.body.Email
+  item.Given = req.body.Given
+  item.Family = req.body.Family
+  item.Salary = req.body.Salary
+  item.Github = req.body.Github
+ 
   res.send(`THIS FUNCTION WILL SAVE A NEW developer ${JSON.stringify(item)}`)
 })
 
