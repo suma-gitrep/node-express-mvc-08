@@ -8,7 +8,7 @@
 */
 const express = require('express')
 const api = express.Router()
-const Model = require('../models/student.js')
+const StudentSchema = require('../models/student.js')
 
 const find = require('lodash.find')
 const notfoundstring = 'Could not find student with id='
@@ -45,7 +45,7 @@ api.get('/', (req, res) => {
 api.get('/create', (req, res) => {
   res.render('developer/create', {
     students: req.app.locals.students.query,
-    student: new Model()
+    student: new StudentSchema()
   })
 })
 
@@ -88,7 +88,7 @@ api.get('/edit/:id', (req, res) => {
 api.post('/save', (req, res) => {
   console.info(`Handling POST ${req}`)
   console.debug(JSON.stringify(req.body))
-  const item = new Model()
+  const item = new StudentSchema()
   console.info(`NEW ID ${req.body._id}`)
   item._id = parseInt(req.body._id)
   item.email = req.body.email
