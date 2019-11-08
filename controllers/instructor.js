@@ -32,53 +32,53 @@ api.get('/findone/:id', (req, res) => {
 
 // RESPOND WITH VIEWS  --------------------------------------------
 
-// GET to this controller base URI (the default)
-// api.get('/', (req, res) => {
-//   res.render('developer/index.ejs', {
-//     developers: req.app.locals.instructors.query
-//   })
-// })
+//GET to this controller base URI (the default)
+api.get('/', (req, res) => {
+  res.render('developer/index.ejs', {
+    developers: req.app.locals.instructors.query
+  })
+})
 
-// // GET create
-// api.get('/create', (req, res) => {
-//   res.render('developer/create', {
-//     developers: req.app.locals.instructors.query,
-//     developer: new Model()
-//   })
-// })
+// GET create
+api.get('/create', (req, res) => {
+  res.render('developer/create', {
+    developers: req.app.locals.instructors.query,
+    developer: new Model()
+  })
+})
 
-// // GET /delete/:id
-// api.get('/delete/:id', (req, res) => {
-//   const id = parseInt(req.params.id)
-//   const data = req.app.locals.instructors.query
-//   const item = find(data, { _id: id })
-//   if (!item) { return res.end(notfoundstring + id) }
-//   res.render('developer/delete', {
-//     developer: item
-//   })
-// })
+// GET /delete/:id
+api.get('/delete/:id', (req, res) => {
+  const id = parseInt(req.params.id)
+  const data = req.app.locals.instructors.query
+  const item = find(data, { _id: id })
+  if (!item) { return res.end(notfoundstring + id) }
+  res.render('developer/delete', {
+    developer: item
+  })
+})
 
-// // GET /details/:id
-// api.get('/details/:id', (req, res) => {
-//   const id = parseInt(req.params.id)
-//   const data = req.app.locals.instructors.query
-//   const item = find(data, { _id: id })
-//   if (!item) { return res.end(notfoundstring + id) }
-//   res.render('developer/details', {
-//     developer: item
-//   })
-// })
+// GET /details/:id
+api.get('/details/:id', (req, res) => {
+  const id = parseInt(req.params.id)
+  const data = req.app.locals.instructors.query
+  const item = find(data, { _id: id })
+  if (!item) { return res.end(notfoundstring + id) }
+  res.render('developer/details', {
+    developer: item
+  })
+})
 
-// // GET one
-// api.get('/edit/:id', (req, res) => {
-//   const id = parseInt(req.params.id)
-//   const data = req.app.locals.instructors.query
-//   const item = find(data, { _id: id })
-//   if (!item) { return res.end(notfoundstring + id) }
-//   res.render('developer/edit', {
-//     developer: item
-//   })
-// })
+// GET one
+api.get('/edit/:id', (req, res) => {
+  const id = parseInt(req.params.id)
+  const data = req.app.locals.instructors.query
+  const item = find(data, { _id: id })
+  if (!item) { return res.end(notfoundstring + id) }
+  res.render('developer/edit', {
+    developer: item
+  })
+})
 
 // // HANDLE EXECUTE DATA MODIFICATION REQUESTS --------------------------------------------
 
