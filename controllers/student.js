@@ -43,7 +43,7 @@ api.get('/', (req, res) => {
 
 // GET create
 api.get('/create', (req, res) => {
-  res.render('developer/create', {
+  res.render('student/create', {
     students: req.app.locals.students.query,
     student: new StudentSchema()
   })

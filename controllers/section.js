@@ -7,7 +7,7 @@
 */
 const express = require('express')
 const api = express.Router()
-const Model = require('../models/section.js')
+const SectionSchema = require('../models/section.js')
 const find = require('lodash.find')
 const notfoundstring = 'Could not find developer with id='
 
@@ -34,49 +34,49 @@ api.get('/findone/:id', (req, res) => {
 
 // GET to this controller base URI (the default)
 api.get('/', (req, res) => {
-  res.render('developer/index.ejs', {
-    developers: req.app.locals.sections.query
+  res.render('section/index.ejs', {
+    sections: req.app.locals.sections.query
   })
 })
 
 // GET create
 api.get('/create', (req, res) => {
-  res.render('developer/create', {
-    developers: req.app.locals.developers.query,
-    developer: new Model()
+  res.render('section/create', {
+    sections: req.app.locals.sections.query,
+    section: new SectionSchema()
   })
 })
 
 // GET /delete/:id
 api.get('/delete/:id', (req, res) => {
   const id = parseInt(req.params.id)
-  const data = req.app.locals.developers.query
+  const data = req.app.locals.sections.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring + id) }
-  res.render('developer/delete', {
-    developer: item
+  res.render('section/delete', {
+    section: item
   })
 })
 
 // GET /details/:id
 api.get('/details/:id', (req, res) => {
   const id = parseInt(req.params.id)
-  const data = req.app.locals.developers.query
+  const data = req.app.locals.sections.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring + id) }
-  res.render('developer/details', {
-    developer: item
+  res.render('section/details', {
+    section: item
   })
 })
 
 // GET one
 api.get('/edit/:id', (req, res) => {
   const id = parseInt(req.params.id)
-  const data = req.app.locals.developers.query
+  const data = req.app.locals.sections.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring + id) }
-  res.render('developer/edit', {
-    developer: item
+  res.render('section/edit', {
+    section: item
   })
 })
 
@@ -86,16 +86,16 @@ api.get('/edit/:id', (req, res) => {
 api.post('/save', (req, res) => {
   console.info(`Handling POST ${req}`)
   console.debug(JSON.stringify(req.body))
-  const item = new Model()
+  const item = new SectionSchema()
   console.info(`NEW ID ${req.body._id}`)
   item._id = parseInt(req.body._id)
-  item.email = req.body.email
-  item.given = req.body.given
-  item.family = req.body.family
-  item.city = req.body.city
-  item.state = req.body.state
-  item.zip = req.body.zip
-  item.country = req.body.country
+  item.SectionNumber = req.body.SectionNumber
+  item.Days = req.body.Days
+  item.StartTime = req.body.StartTime
+  item.RoomNumber = req.body.RoomNumber
+  item.InstructorID = req.body.InstructorID
+  item.CourseID = req.body.CourseID
+ 
   res.send(`THIS FUNCTION WILL SAVE A NEW developer ${JSON.stringify(item)}`)
 })
 
