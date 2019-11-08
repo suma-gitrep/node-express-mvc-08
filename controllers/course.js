@@ -33,7 +33,7 @@ api.get('/findone/:id', (req, res) => {
 
 // RESPOND WITH VIEWS  --------------------------------------------
 
-GET to this controller base URI (the default)
+//GET to this controller base URI (the default)
 api.get('/', (req, res) => {
   res.render('developer/index.ejs', {
     developers: req.app.locals.students.query
