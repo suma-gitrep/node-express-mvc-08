@@ -36,14 +36,14 @@ api.get('/findone/:id', (req, res) => {
 //GET to this controller base URI (the default)
 api.get('/', (req, res) => {
   res.render('developer/index.ejs', {
-    developers: req.app.locals.students.query
+    developers: req.app.locals.courses.query
   })
 })
 
 // GET create
 api.get('/create', (req, res) => {
   res.render('developer/create', {
-    developers: req.app.locals.students.query,
+    developers: req.app.locals.courses.query,
     developer: new Model()
   })
 })
@@ -51,7 +51,7 @@ api.get('/create', (req, res) => {
 // GET /delete/:id
 api.get('/delete/:id', (req, res) => {
   const id = parseInt(req.params.id)
-  const data = req.app.locals.students.query
+  const data = req.app.locals.courses.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring + id) }
   res.render('developer/delete', {
@@ -62,7 +62,7 @@ api.get('/delete/:id', (req, res) => {
 // GET /details/:id
 api.get('/details/:id', (req, res) => {
   const id = parseInt(req.params.id)
-  const data = req.app.locals.students.query
+  const data = req.app.locals.courses.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring + id) }
   res.render('developer/details', {
@@ -73,7 +73,7 @@ api.get('/details/:id', (req, res) => {
 // GET one
 api.get('/edit/:id', (req, res) => {
   const id = parseInt(req.params.id)
-  const data = req.app.locals.students.query
+  const data = req.app.locals.courses.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring + id) }
   res.render('developer/edit', {
@@ -83,37 +83,37 @@ api.get('/edit/:id', (req, res) => {
 
 // // HANDLE EXECUTE DATA MODIFICATION REQUESTS --------------------------------------------
 
-// // POST new
-// api.post('/save', (req, res) => {
-//   console.info(`Handling POST ${req}`)
-//   console.debug(JSON.stringify(req.body))
-//   const item = new Model()
-//   console.info(`NEW ID ${req.body._id}`)
-//   item._id = parseInt(req.body._id)
-//   item.email = req.body.email
-//   item.given = req.body.given
-//   item.family = req.body.family
-//   item.city = req.body.city
-//   item.state = req.body.state
-//   item.zip = req.body.zip
-//   item.country = req.body.country
-//   res.send(`THIS FUNCTION WILL SAVE A NEW developer ${JSON.stringify(item)}`)
-// })
+// POST new
+api.post('/save', (req, res) => {
+  console.info(`Handling POST ${req}`)
+  console.debug(JSON.stringify(req.body))
+  const item = new Model()
+  console.info(`NEW ID ${req.body._id}`)
+  item._id = parseInt(req.body._id)
+  item.email = req.body.email
+  item.given = req.body.given
+  item.family = req.body.family
+  item.city = req.body.city
+  item.state = req.body.state
+  item.zip = req.body.zip
+  item.country = req.body.country
+  res.send(`THIS FUNCTION WILL SAVE A NEW developer ${JSON.stringify(item)}`)
+})
 
-// // POST update with id
-// api.post('/save/:id', (req, res) => {
-//   console.info(`Handling SAVE request ${req}`)
-//   const id = parseInt(req.params.id)
-//   console.info(`Handling SAVING ID=${id}`)
-//   res.send(`THIS FUNCTION WILL SAVE CHANGES TO AN EXISTING developer with id=${id}`)
-// })
+// POST update with id
+api.post('/save/:id', (req, res) => {
+  console.info(`Handling SAVE request ${req}`)
+  const id = parseInt(req.params.id)
+  console.info(`Handling SAVING ID=${id}`)
+  res.send(`THIS FUNCTION WILL SAVE CHANGES TO AN EXISTING developer with id=${id}`)
+})
 
-// // DELETE id (uses HTML5 form method POST)
-// api.post('/delete/:id', (req, res) => {
-//   console.info(`Handling DELETE request ${req}`)
-//   const id = parseInt(req.params.id)
-//   console.info(`Handling REMOVING ID=${id}`)
-//   res.send(`THIS FUNCTION WILL DELETE FOREVER THE EXISTING developer with id=${id}`)
-// })
+// DELETE id (uses HTML5 form method POST)
+api.post('/delete/:id', (req, res) => {
+  console.info(`Handling DELETE request ${req}`)
+  const id = parseInt(req.params.id)
+  console.info(`Handling REMOVING ID=${id}`)
+  res.send(`THIS FUNCTION WILL DELETE FOREVER THE EXISTING developer with id=${id}`)
+})
 
 module.exports = api

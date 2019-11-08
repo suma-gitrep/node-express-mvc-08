@@ -82,37 +82,37 @@ api.get('/edit/:id', (req, res) => {
 
 // // HANDLE EXECUTE DATA MODIFICATION REQUESTS --------------------------------------------
 
-// // POST new
-// api.post('/save', (req, res) => {
-//   console.info(`Handling POST ${req}`)
-//   console.debug(JSON.stringify(req.body))
-//   const item = new Model()
-//   console.info(`NEW ID ${req.body._id}`)
-//   item._id = parseInt(req.body._id)
-//   item.email = req.body.email
-//   item.given = req.body.given
-//   item.family = req.body.family
-//   item.city = req.body.city
-//   item.state = req.body.state
-//   item.zip = req.body.zip
-//   item.country = req.body.country
-//   res.send(`THIS FUNCTION WILL SAVE A NEW developer ${JSON.stringify(item)}`)
-// })
+// POST new
+api.post('/save', (req, res) => {
+  console.info(`Handling POST ${req}`)
+  console.debug(JSON.stringify(req.body))
+  const item = new Model()
+  console.info(`NEW ID ${req.body._id}`)
+  item._id = parseInt(req.body._id)
+  item.email = req.body.email
+  item.given = req.body.given
+  item.family = req.body.family
+  item.city = req.body.city
+  item.state = req.body.state
+  item.zip = req.body.zip
+  item.country = req.body.country
+  res.send(`THIS FUNCTION WILL SAVE A NEW developer ${JSON.stringify(item)}`)
+})
 
-// // POST update with id
-// api.post('/save/:id', (req, res) => {
-//   console.info(`Handling SAVE request ${req}`)
-//   const id = parseInt(req.params.id)
-//   console.info(`Handling SAVING ID=${id}`)
-//   res.send(`THIS FUNCTION WILL SAVE CHANGES TO AN EXISTING developer with id=${id}`)
-// })
+// POST update with id
+api.post('/save/:id', (req, res) => {
+  console.info(`Handling SAVE request ${req}`)
+  const id = parseInt(req.params.id)
+  console.info(`Handling SAVING ID=${id}`)
+  res.send(`THIS FUNCTION WILL SAVE CHANGES TO AN EXISTING developer with id=${id}`)
+})
 
-// // DELETE id (uses HTML5 form method POST)
-// api.post('/delete/:id', (req, res) => {
-//   console.info(`Handling DELETE request ${req}`)
-//   const id = parseInt(req.params.id)
-//   console.info(`Handling REMOVING ID=${id}`)
-//   res.send(`THIS FUNCTION WILL DELETE FOREVER THE EXISTING developer with id=${id}`)
-// })
+// DELETE id (uses HTML5 form method POST)
+api.post('/delete/:id', (req, res) => {
+  console.info(`Handling DELETE request ${req}`)
+  const id = parseInt(req.params.id)
+  console.info(`Handling REMOVING ID=${id}`)
+  res.send(`THIS FUNCTION WILL DELETE FOREVER THE EXISTING developer with id=${id}`)
+})
 
 module.exports = api

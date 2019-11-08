@@ -1,0 +1,44 @@
+<br>
+<br>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <a href="student/create" class="btn btn-primary new">
+        Create a new student
+      </a>
+
+      <h2>Recent entries</h2>
+      <p>There are
+        <%= students.length %> students.
+        <br>
+      </p>
+      <% for (let i = students.length-1; i >= 0; i--) {   
+        student = students[i];   %>
+
+      <div class="panel panel-default">
+        <div class="panel-heading"></div>
+        <div class="text-muted pull-right"></div>
+        <div class="panel-body">
+
+          <br> ID: <%=student._id %>
+          <br> Email: <%=student.email %>
+          <br> Given Name : <%=student.given %>
+          <br> family Name: <%=student.family %>
+          <br> Github: <%=student.github %>
+          <br> Website: <%=student.website %>
+          <br> GPA: <%=student.gpa %>
+          <br> SectionID: <%=student.sectionid %>
+
+          <hr>
+          <a href="/student/delete/<%= student._id  %>" class="btn btn-danger"> Delete </a>
+          <a href="/student/details/<%= student._id %>" class="btn btn-info"> Details </a>
+          <a href="/student/edit/<%= student._id %>" class="btn btn-primary"> Edit </a>
+          <hr>
+          <hr>
+        </div>
+      </div>
+      <% } %>
+
+    </div>
+  </div>
+</div>
