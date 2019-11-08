@@ -7,7 +7,7 @@
 */
 const express = require('express')
 const api = express.Router()
-const Model = require('../models/course.js')
+const CourseSchema = require('../models/course.js')
 
 const find = require('lodash.find')
 const notfoundstring = 'Could not find student with id='
@@ -35,16 +35,16 @@ api.get('/findone/:id', (req, res) => {
 
 //GET to this controller base URI (the default)
 api.get('/', (req, res) => {
-  res.render('developer/index.ejs', {
-    developers: req.app.locals.courses.query
+  res.render('course/index.ejs', {
+    courses: req.app.locals.courses.query
   })
 })
 
 // GET create
 api.get('/create', (req, res) => {
-  res.render('developer/create', {
+  res.render('course/create', {
     developers: req.app.locals.courses.query,
-    developer: new Model()
+    course: new CourseSchema()
   })
 })
 
@@ -54,8 +54,8 @@ api.get('/delete/:id', (req, res) => {
   const data = req.app.locals.courses.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring + id) }
-  res.render('developer/delete', {
-    developer: item
+  res.render('course/delete', {
+    course: item
   })
 })
 
@@ -65,8 +65,8 @@ api.get('/details/:id', (req, res) => {
   const data = req.app.locals.courses.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring + id) }
-  res.render('developer/details', {
-    developer: item
+  res.render('course/details', {
+    course: item
   })
 })
 
@@ -76,8 +76,8 @@ api.get('/edit/:id', (req, res) => {
   const data = req.app.locals.courses.query
   const item = find(data, { _id: id })
   if (!item) { return res.end(notfoundstring + id) }
-  res.render('developer/edit', {
-    developer: item
+  res.render('course/edit', {
+    course: item
   })
 })
 
@@ -87,16 +87,16 @@ api.get('/edit/:id', (req, res) => {
 api.post('/save', (req, res) => {
   console.info(`Handling POST ${req}`)
   console.debug(JSON.stringify(req.body))
-  const item = new Model()
+  const item = new CourseSchema()
   console.info(`NEW ID ${req.body._id}`)
   item._id = parseInt(req.body._id)
-  item.email = req.body.email
-  item.given = req.body.given
-  item.family = req.body.family
-  item.city = req.body.city
-  item.state = req.body.state
-  item.zip = req.body.zip
-  item.country = req.body.country
+  item.schoolnumber = req.body.schoolnumber
+  item.coursenumber = req.body.coursenumber
+  item.name = req.body.name
+  item.inspring = req.body.inspring
+  item.insummer = req.body.insummer
+  item.infall = req.body.infall
+  
   res.send(`THIS FUNCTION WILL SAVE A NEW developer ${JSON.stringify(item)}`)
 })
 
