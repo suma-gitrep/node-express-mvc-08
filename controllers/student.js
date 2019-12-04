@@ -52,6 +52,7 @@ api.get('/create', (req, res) => {
     if (err) { return res.end('error on create') }
     res.locals.students = data
     res.locals.student = new StudentModal()
+
     res.render('student/create')
   })
 })
@@ -99,6 +100,7 @@ api.post('/save', (req, res) => {
   console.info(`Handling POST ${req}`)
   console.debug(JSON.stringify(req.body))
   const item = new StudentModal()
+  
   console.info(`NEW ID ${req.body._id}`)
   item._id = parseInt(req.body._id)
   item.given = req.body.given
@@ -107,9 +109,11 @@ api.post('/save', (req, res) => {
   item.GPA = req.body.GPA
   item.Website = req.body.Website
   item.Github = req.body.Github
-  item.SectionId = req.body.SectionID
+  item.SectionID = req.body.SectionID
+  // console.log(item);
   // res.send(`THIS FUNCTION WILL SAVE A NEW student ${JSON.stringify(item)}`)
   item.save((err) => {
+    console.log(err);
     if (err) { return res.end('ERROR: item could not be saved') }
     LOG.info(`SAVING NEW item ${JSON.stringify(item)}`)
     return res.redirect('/student')
@@ -130,7 +134,7 @@ api.post('/save/:id', (req, res) => {
         GPA: req.body.GPA,
         Website: req.body.Website,
         Github: req.body.Github,
-        SectionId: req.body.SectionID
+        SectionID: req.body.SectionID
       }
     },
     (err, item) => {

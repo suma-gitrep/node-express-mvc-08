@@ -16,68 +16,80 @@ const notfoundstring = 'Could not find instructor with id='
 
 // GET all JSON
 api.get('/findall', (req, res) => {
-  res.setHeader('Content-Type', 'application/json')
-  const data = req.app.locals.instructors.query
-  res.send(JSON.stringify(data))
+  
+  InstructorSchema.find({}, (err, data) => {
+    if (err) { return res.end('Error finding all') }
+    res.json(data)
+  })
 })
 
 // GET one JSON by ID
 api.get('/findone/:id', (req, res) => {
   res.setHeader('Content-Type', 'application/json')
   const id = parseInt(req.params.id)
-  const data = req.app.locals.instructors.query
-  const item = find(data, { _id: id })
-  if (!item) { return res.end(notfoundstring + id) }
-  res.send(JSON.stringify(item))
+  InstructorSchema.find({ _id: id }, (err, results) => {
+    if (err) { return res.end(`notfoundstring ${id}`) }
+    res.json(results[0])
+  })
 })
 
 // RESPOND WITH VIEWS  --------------------------------------------
 
 //GET to this controller base URI (the default)
 api.get('/', (req, res) => {
-  res.render('instructor/index.ejs', {
-    instructors: req.app.locals.instructors.query
+  // LOG.info(`Handling GET / ${req}`)
+  InstructorSchema.find({}, (err, data) => {
+    if (err) { return res.end('Error') }
+    res.locals.instructors = data
+    res.render('instructor/index.ejs')
   })
 })
 
 // GET create
 api.get('/create', (req, res) => {
-  res.render('instructor/create', {
-    instructors: req.app.locals.instructors.query,
-    instructor: new InstructorSchema()
+  InstructorSchema.find({}, (err, data) => {
+    if (err) { return res.end('error on create')
+   }
+    res.locals.instructors = data
+    res.locals.instructor = new InstructorSchema()
+
+    res.render('instructor/create')
   })
 })
 
 // GET /delete/:id
 api.get('/delete/:id', (req, res) => {
+  // LOG.info(`Handling GET /delete/:id ${req}`)
   const id = parseInt(req.params.id)
-  const data = req.app.locals.instructors.query
-  const item = find(data, { _id: id })
-  if (!item) { return res.end(notfoundstring + id) }
-  res.render('instructor/delete', {
-    instructor: item
+  InstructorSchema.find({ _id: id }, (err, results) => {
+    if (err) { return res.end(notfoundstring) }
+    // LOG.info(`RETURNING VIEW FOR ${JSON.stringify(results)}`)
+    res.locals.instructor = results[0]
+    return res.render('instructor/delete')
   })
 })
 
 // GET /details/:id
 api.get('/details/:id', (req, res) => {
+  // LOG.info(`Handling GET /details/:id ${req}`)
   const id = parseInt(req.params.id)
-  const data = req.app.locals.instructors.query
-  const item = find(data, { _id: id })
-  if (!item) { return res.end(notfoundstring + id) }
-  res.render('instructor/details', {
-    instructor: item
+  InstructorSchema.find({ _id: id }, (err, results) => {
+    if (err) { return res.end(notfoundstring) }
+    // LOG.info(`RETURNING VIEW FOR ${JSON.stringify(results)}`)
+    res.locals.instructor = results[0]
+    return res.render('instructor/details')
   })
 })
 
 // GET one
 api.get('/edit/:id', (req, res) => {
+  // LOG.info(`Handling GET /edit/:id ${req}`)
   const id = parseInt(req.params.id)
-  const data = req.app.locals.instructors.query
-  const item = find(data, { _id: id })
-  if (!item) { return res.end(notfoundstring + id) }
-  res.render('instructor/edit', {
-    instructor: item
+  InstructorSchema.find({ _id: id }, (err, results) => {
+    if (err) { return res.end(notfoundstring) }
+    // LOG.info(`RETURNING VIEW FOR${JSON.stringify(results)}`)
+    res.locals.instructor = results[0]
+    return res.render('instructor/edit')
   })
 })
 
@@ -94,25 +106,51 @@ api.post('/save', (req, res) => {
   item.Given = req.body.Given
   item.Family = req.body.Family
   item.Salary = req.body.Salary
-  item.Github = req.body.Github
- 
-  res.send(`THIS FUNCTION WILL SAVE A NEW developer ${JSON.stringify(item)}`)
+  item.GitHub = req.body.GitHub
+  console.log(item);
+
+  item.save((err) => {
+    console.log(err);
+    if (err) { return res.end('ERROR: item could not be saved') }
+   
+    return res.redirect('/instructor')
+  })
 })
 
 // POST update with id
 api.post('/save/:id', (req, res) => {
-  console.info(`Handling SAVE request ${req}`)
+  // LOG.info(`Handling SAVE request ${req}`)
   const id = parseInt(req.params.id)
-  console.info(`Handling SAVING ID=${id}`)
-  res.send(`THIS FUNCTION WILL SAVE CHANGES TO AN EXISTING developer with id=${id}`)
+  // LOG.info(`Handling SAVING ID=${id}`)
+  InstructorSchema.updateOne({ _id: id },
+    { // use mongoose field update operator $set
+      $set: {
+        Given: req.body.Given,
+        Family: req.body.Family,
+        Email: req.body.Email,
+        Salary:req.body.Salary,
+        Github: req.body.Github,
+      }
+    },
+    (err, item) => {
+      if (err) { return res.end(notfoundstring) }
+      // LOG.info(`ORIGINAL VALUES ${JSON.stringify(item)}`)
+      // LOG.info(`UPDATED VALUES: ${JSON.stringify(req.body)}`)
+      // LOG.info(`SAVING UPDATED item ${JSON.stringify(item)}`)
+      return res.redirect('/instructor')
+    })
 })
 
 // DELETE id (uses HTML5 form method POST)
 api.post('/delete/:id', (req, res) => {
-  console.info(`Handling DELETE request ${req}`)
+  // LOG.info(`Handling DELETE request ${req}`)
   const id = parseInt(req.params.id)
-  console.info(`Handling REMOVING ID=${id}`)
-  res.send(`THIS FUNCTION WILL DELETE FOREVER THE EXISTING developer with id=${id}`)
+  // LOG.info(`Handling REMOVING ID=${id}`)
+  InstructorSchema.remove({ _id: id }).setOptions({ single: true }).exec((err, deleted) => {
+    if (err) { return res.end(notfoundstring) }
+    console.log(`Permanently deleted item ${JSON.stringify(deleted)}`)
+    return res.redirect('/instructor')
+  })
 })
 
 module.exports = api

@@ -452,3 +452,563 @@
 {"message":"GET /student","level":"debug"}
 {"message":"Handling GET / [object Object]","level":"info"}
 {"message":"GET /","level":"debug"}
+{"message":"GET /","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"error":{"name":"MongoNetworkError"},"level":"error","message":"uncaughtException: read ECONNRESET\nError: read ECONNRESET\n    at TLSWrap.onStreamRead (internal/stream_base_commons.js:201:27)","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (internal/stream_base_commons.js:201:27)","exception":true,"date":"Tue Dec 03 2019 23:49:21 GMT-0600 (Central Standard Time)","process":{"pid":20816,"uid":null,"gid":null,"cwd":"C:\\Users\\S537239\\Desktop\\mvc-app","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v12.12.0","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S537239\\Desktop\\mvc-app\\app"],"memoryUsage":{"rss":42815488,"heapTotal":18341888,"heapUsed":15891128,"external":19600889}},"os":{"loadavg":[0,0,0],"uptime":1464260},"trace":[{"column":27,"file":"internal/stream_base_commons.js","function":"TLSWrap.onStreamRead","line":201,"method":"onStreamRead","native":false}]}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /course","level":"debug"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /instructor/findall","level":"debug"}
+{"message":"GET /instructor/findall","level":"debug"}
+{"message":"GET /course","level":"debug"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /course","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /section","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /developer","level":"debug"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"error":{"name":"MongoNetworkError"},"level":"error","message":"uncaughtException: read ECONNRESET\nError: read ECONNRESET\n    at TLSWrap.onStreamRead (internal/stream_base_commons.js:201:27)","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (internal/stream_base_commons.js:201:27)","exception":true,"date":"Wed Dec 04 2019 13:25:39 GMT-0600 (Central Standard Time)","process":{"pid":21032,"uid":null,"gid":null,"cwd":"C:\\Users\\S537239\\Desktop\\mvc-app","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v12.12.0","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S537239\\Desktop\\mvc-app\\app.js"],"memoryUsage":{"rss":43663360,"heapTotal":19652608,"heapUsed":17086160,"external":19589129}},"os":{"loadavg":[0,0,0],"uptime":1513238},"trace":[{"column":27,"file":"internal/stream_base_commons.js","function":"TLSWrap.onStreamRead","line":201,"method":"onStreamRead","native":false}]}
+{"error":{"name":"MongoNetworkError"},"level":"error","message":"uncaughtException: read ECONNRESET\nError: read ECONNRESET\n    at TLSWrap.onStreamRead (internal/stream_base_commons.js:201:27)","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (internal/stream_base_commons.js:201:27)","exception":true,"date":"Wed Dec 04 2019 13:25:40 GMT-0600 (Central Standard Time)","process":{"pid":21032,"uid":null,"gid":null,"cwd":"C:\\Users\\S537239\\Desktop\\mvc-app","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v12.12.0","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S537239\\Desktop\\mvc-app\\app.js"],"memoryUsage":{"rss":44630016,"heapTotal":19652608,"heapUsed":17141552,"external":19589185}},"os":{"loadavg":[0,0,0],"uptime":1513238},"trace":[{"column":27,"file":"internal/stream_base_commons.js","function":"TLSWrap.onStreamRead","line":201,"method":"onStreamRead","native":false}]}
+{"error":{"name":"MongoNetworkError"},"level":"error","message":"uncaughtException: read ECONNRESET\nError: read ECONNRESET\n    at TLSWrap.onStreamRead (internal/stream_base_commons.js:201:27)","stack":"Error: read ECONNRESET\n    at TLSWrap.onStreamRead (internal/stream_base_commons.js:201:27)","exception":true,"date":"Wed Dec 04 2019 13:25:40 GMT-0600 (Central Standard Time)","process":{"pid":21032,"uid":null,"gid":null,"cwd":"C:\\Users\\S537239\\Desktop\\mvc-app","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v12.12.0","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S537239\\Desktop\\mvc-app\\app.js"],"memoryUsage":{"rss":44654592,"heapTotal":19652608,"heapUsed":17167376,"external":19597377}},"os":{"loadavg":[0,0,0],"uptime":1513239},"trace":[{"column":27,"file":"internal/stream_base_commons.js","function":"TLSWrap.onStreamRead","line":201,"method":"onStreamRead","native":false}]}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /developer","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /course","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /course","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /student/findall","level":"debug"}
+{"message":"Handling /findall [object Object]","level":"info"}
+{"message":"GET /student/findone/10","level":"debug"}
+{"message":"Handling /findone [object Object]","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /student/create","level":"debug"}
+{"message":"Handling GET /create [object Object]","level":"info"}
+{"message":"GET /student?","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /student/create","level":"debug"}
+{"message":"Handling GET /create [object Object]","level":"info"}
+{"message":"POST /student/save","level":"debug"}
+{"message":"GET /student/edit/16","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR[{\"given\":\"sai\",\"family\":\"sree\",\"_id\":16,\"email\":\"saisree@nwmissouri.edu\",\"Github\":\"saisree\",\"Website\":\"www.saisree.com\",\"GPA\":7.99,\"SectionID\":1005}]","level":"info"}
+{"message":"POST /student/save/16","level":"debug"}
+{"message":"Handling SAVE request [object Object]","level":"info"}
+{"message":"Handling SAVING ID=16","level":"info"}
+{"message":"ORIGINAL VALUES {\"n\":1,\"nModified\":0,\"opTime\":{\"ts\":\"6766691605861629953\",\"t\":1},\"electionId\":\"7fffffff0000000000000001\",\"ok\":1,\"operationTime\":\"6766691605861629953\",\"$clusterTime\":{\"clusterTime\":\"6766691605861629953\",\"signature\":{\"hash\":\"obCzRf3ae2Eo4xR9mcf5CN09B10=\",\"keyId\":\"6766262147786735617\"}}}","level":"info"}
+{"message":"UPDATED VALUES: {\"email\":\"saisree@nwmissouri.edu\",\"given\":\"sai\",\"family\":\"sree\",\"Github\":\"saisree\",\"Website\":\"www.saisree.com\",\"GPA\":\"7.99\",\"SectionID\":\"1006\"}","level":"info"}
+{"message":"SAVING UPDATED item {\"n\":1,\"nModified\":0,\"opTime\":{\"ts\":\"6766691605861629953\",\"t\":1},\"electionId\":\"7fffffff0000000000000001\",\"ok\":1,\"operationTime\":\"6766691605861629953\",\"$clusterTime\":{\"clusterTime\":\"6766691605861629953\",\"signature\":{\"hash\":\"obCzRf3ae2Eo4xR9mcf5CN09B10=\",\"keyId\":\"6766262147786735617\"}}}","level":"info"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /student/edit/16","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR[{\"given\":\"sai\",\"family\":\"sree\",\"_id\":16,\"email\":\"saisree@nwmissouri.edu\",\"Github\":\"saisree\",\"Website\":\"www.saisree.com\",\"GPA\":7.99,\"SectionID\":1005}]","level":"info"}
+{"message":"GET /student/create","level":"debug"}
+{"message":"Handling GET /create [object Object]","level":"info"}
+{"message":"POST /student/save","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"POST /student/save","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"POST /student/save","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"POST /student/save","level":"debug"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"POST /student/save","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"POST /student/save","level":"debug"}
+{"message":"SAVING NEW item {\"given\":\"suma\",\"family\":\"soma\",\"_id\":17,\"email\":\"sumasomadas@gmail.com\",\"GPA\":3,\"Website\":\"www.gmail.com\",\"Github\":\"www.gmail.com\",\"SectionID\":1234,\"__v\":0}","level":"info"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /student/edit/17","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR[{\"given\":\"suma\",\"family\":\"soma\",\"_id\":17,\"email\":\"sumasomadas@gmail.com\",\"GPA\":3,\"Website\":\"www.gmail.com\",\"Github\":\"www.gmail.com\",\"SectionID\":1234,\"__v\":0}]","level":"info"}
+{"message":"POST /student/save/17","level":"debug"}
+{"message":"Handling SAVE request [object Object]","level":"info"}
+{"message":"Handling SAVING ID=17","level":"info"}
+{"message":"ORIGINAL VALUES {\"n\":1,\"nModified\":0,\"opTime\":{\"ts\":\"6766694212906778625\",\"t\":1},\"electionId\":\"7fffffff0000000000000001\",\"ok\":1,\"operationTime\":\"6766694212906778625\",\"$clusterTime\":{\"clusterTime\":\"6766694212906778625\",\"signature\":{\"hash\":\"p7m12+DvO5WlH226SncNwmAmI5o=\",\"keyId\":\"6766262147786735617\"}}}","level":"info"}
+{"message":"UPDATED VALUES: {\"email\":\"sumasomadas@gmail.com\",\"given\":\"suma\",\"family\":\"soma\",\"Github\":\"www.gmail.com\",\"Website\":\"www.gmail.com\",\"GPA\":\"3\",\"SectionID\":\"1235\"}","level":"info"}
+{"message":"SAVING UPDATED item {\"n\":1,\"nModified\":0,\"opTime\":{\"ts\":\"6766694212906778625\",\"t\":1},\"electionId\":\"7fffffff0000000000000001\",\"ok\":1,\"operationTime\":\"6766694212906778625\",\"$clusterTime\":{\"clusterTime\":\"6766694212906778625\",\"signature\":{\"hash\":\"p7m12+DvO5WlH226SncNwmAmI5o=\",\"keyId\":\"6766262147786735617\"}}}","level":"info"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /student/edit/17","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR[{\"given\":\"suma\",\"family\":\"soma\",\"_id\":17,\"email\":\"sumasomadas@gmail.com\",\"GPA\":3,\"Website\":\"www.gmail.com\",\"Github\":\"www.gmail.com\",\"SectionID\":1234,\"__v\":0}]","level":"info"}
+{"message":"POST /student/save/17","level":"debug"}
+{"message":"Handling SAVE request [object Object]","level":"info"}
+{"message":"Handling SAVING ID=17","level":"info"}
+{"message":"ORIGINAL VALUES {\"n\":1,\"nModified\":1,\"opTime\":{\"ts\":\"6766694341755797505\",\"t\":1},\"electionId\":\"7fffffff0000000000000001\",\"ok\":1,\"operationTime\":\"6766694341755797505\",\"$clusterTime\":{\"clusterTime\":\"6766694341755797505\",\"signature\":{\"hash\":\"N313ZpyG9VQ+3P27s9s3UVyZxz4=\",\"keyId\":\"6766262147786735617\"}}}","level":"info"}
+{"message":"UPDATED VALUES: {\"email\":\"sumasomadas@gmail.com\",\"given\":\"suma\",\"family\":\"soma\",\"Github\":\"www.gmail.com\",\"Website\":\"www.gmail.com\",\"GPA\":\"3\",\"SectionID\":\"1235\"}","level":"info"}
+{"message":"SAVING UPDATED item {\"n\":1,\"nModified\":1,\"opTime\":{\"ts\":\"6766694341755797505\",\"t\":1},\"electionId\":\"7fffffff0000000000000001\",\"ok\":1,\"operationTime\":\"6766694341755797505\",\"$clusterTime\":{\"clusterTime\":\"6766694341755797505\",\"signature\":{\"hash\":\"N313ZpyG9VQ+3P27s9s3UVyZxz4=\",\"keyId\":\"6766262147786735617\"}}}","level":"info"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /instructor/delete/6","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /instructor/findall","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"error":{},"level":"error","message":"uncaughtException: StudentModal is not defined\nReferenceError: StudentModal is not defined\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\controllers\\instructor.js:53:33\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\model.js:4609:16\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\query.js:4348:12\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\helpers\\query\\completeMany.js:35:39\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)","stack":"ReferenceError: StudentModal is not defined\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\controllers\\instructor.js:53:33\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\model.js:4609:16\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\query.js:4348:12\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\helpers\\query\\completeMany.js:35:39\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)","exception":true,"date":"Wed Dec 04 2019 15:17:54 GMT-0600 (Central Standard Time)","process":{"pid":18892,"uid":null,"gid":null,"cwd":"C:\\Users\\S537239\\Desktop\\mvc-app","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v12.12.0","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S537239\\Desktop\\mvc-app\\app.js"],"memoryUsage":{"rss":59322368,"heapTotal":34074624,"heapUsed":20746168,"external":19782408}},"os":{"loadavg":[0,0,0],"uptime":1519973},"trace":[{"column":33,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\controllers\\instructor.js","function":null,"line":53,"method":null,"native":false},{"column":16,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\model.js","function":null,"line":4609,"method":null,"native":false},{"column":12,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\query.js","function":null,"line":4348,"method":null,"native":false},{"column":39,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\helpers\\query\\completeMany.js","function":null,"line":35,"method":null,"native":false},{"column":11,"file":"internal/process/task_queues.js","function":"processTicksAndRejections","line":75,"method":null,"native":false}]}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"GET /instructor?","level":"debug"}
+{"message":"GET /instructor/edit/6","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"error":{},"level":"error","message":"uncaughtException: LOG is not defined\nReferenceError: LOG is not defined\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\controllers\\instructor.js:112:5\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\model.js:4609:16\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\utils.js:276:16\n    at model.<anonymous> (C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\model.js:474:7)\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:315:21\n    at next (C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:209:27)\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:182:9\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:507:38\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)","stack":"ReferenceError: LOG is not defined\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\controllers\\instructor.js:112:5\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\model.js:4609:16\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\utils.js:276:16\n    at model.<anonymous> (C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\model.js:474:7)\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:315:21\n    at next (C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:209:27)\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:182:9\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:507:38\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)","exception":true,"date":"Wed Dec 04 2019 15:34:40 GMT-0600 (Central Standard Time)","process":{"pid":18508,"uid":null,"gid":null,"cwd":"C:\\Users\\S537239\\Desktop\\mvc-app","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v12.12.0","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S537239\\Desktop\\mvc-app\\app.js"],"memoryUsage":{"rss":44179456,"heapTotal":19652608,"heapUsed":17054808,"external":19584498}},"os":{"loadavg":[0,0,0],"uptime":1520979},"trace":[{"column":5,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\controllers\\instructor.js","function":null,"line":112,"method":null,"native":false},{"column":16,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\model.js","function":null,"line":4609,"method":null,"native":false},{"column":16,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\utils.js","function":null,"line":276,"method":null,"native":false},{"column":7,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\model.js","function":null,"line":474,"method":null,"native":false},{"column":21,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js","function":null,"line":315,"method":null,"native":false},{"column":27,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js","function":"next","line":209,"method":null,"native":false},{"column":9,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js","function":null,"line":182,"method":null,"native":false},{"column":38,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js","function":null,"line":507,"method":null,"native":false},{"column":11,"file":"internal/process/task_queues.js","function":"processTicksAndRejections","line":75,"method":null,"native":false}]}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"error":{},"level":"error","message":"uncaughtException: LOG is not defined\nReferenceError: LOG is not defined\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\controllers\\instructor.js:112:5\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\model.js:4609:16\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\utils.js:276:16\n    at model.<anonymous> (C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\model.js:474:7)\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:315:21\n    at next (C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:209:27)\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:182:9\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:507:38\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)","stack":"ReferenceError: LOG is not defined\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\controllers\\instructor.js:112:5\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\model.js:4609:16\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\utils.js:276:16\n    at model.<anonymous> (C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\model.js:474:7)\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:315:21\n    at next (C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:209:27)\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:182:9\n    at C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js:507:38\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)","exception":true,"date":"Wed Dec 04 2019 15:35:10 GMT-0600 (Central Standard Time)","process":{"pid":21924,"uid":null,"gid":null,"cwd":"C:\\Users\\S537239\\Desktop\\mvc-app","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v12.12.0","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S537239\\Desktop\\mvc-app\\app.js"],"memoryUsage":{"rss":43937792,"heapTotal":19390464,"heapUsed":16605752,"external":19587445}},"os":{"loadavg":[0,0,0],"uptime":1521009},"trace":[{"column":5,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\controllers\\instructor.js","function":null,"line":112,"method":null,"native":false},{"column":16,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\model.js","function":null,"line":4609,"method":null,"native":false},{"column":16,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\utils.js","function":null,"line":276,"method":null,"native":false},{"column":7,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\mongoose\\lib\\model.js","function":null,"line":474,"method":null,"native":false},{"column":21,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js","function":null,"line":315,"method":null,"native":false},{"column":27,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js","function":"next","line":209,"method":null,"native":false},{"column":9,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js","function":null,"line":182,"method":null,"native":false},{"column":38,"file":"C:\\Users\\S537239\\Desktop\\mvc-app\\node_modules\\kareem\\index.js","function":null,"line":507,"method":null,"native":false},{"column":11,"file":"internal/process/task_queues.js","function":"processTicksAndRejections","line":75,"method":null,"native":false}]}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /instructor/details/9","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /instructor/details/9","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /instructor/details/9","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /instructor/details/9","level":"debug"}
+{"message":"GET /instructor/edit/9","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /instructor/delete/9","level":"debug"}
+{"message":"POST /instructor/delete/9","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /instructor/delete/9","level":"debug"}
+{"message":"POST /instructor/delete/9","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /instructor/delete/8","level":"debug"}
+{"message":"POST /instructor/delete/8","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /instructor/details/7","level":"debug"}
+{"message":"GET /instructor?","level":"debug"}
+{"message":"GET /instructor/edit/7","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /instructor/edit/7","level":"debug"}
+{"message":"GET /instructor/edit/6","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /instructor/edit/7","level":"debug"}
+{"message":"POST /instructor/save/7","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"POST /instructor/save/7","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /student/edit/17","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR[{\"given\":\"suma\",\"family\":\"soma\",\"_id\":17,\"email\":\"sumasomadas@gmail.com\",\"GPA\":3,\"Website\":\"www.gmail.com\",\"Github\":\"www.gmail.com\",\"SectionID\":1235,\"__v\":0}]","level":"info"}
+{"message":"POST /student/save/17","level":"debug"}
+{"message":"Handling SAVE request [object Object]","level":"info"}
+{"message":"Handling SAVING ID=17","level":"info"}
+{"message":"ORIGINAL VALUES {\"n\":1,\"nModified\":1,\"opTime\":{\"ts\":\"6766704297489989633\",\"t\":1},\"electionId\":\"7fffffff0000000000000001\",\"ok\":1,\"operationTime\":\"6766704297489989633\",\"$clusterTime\":{\"clusterTime\":\"6766704297489989633\",\"signature\":{\"hash\":\"DCHy6woXupGJF5pw8hppmj1DMaI=\",\"keyId\":\"6766262147786735617\"}}}","level":"info"}
+{"message":"UPDATED VALUES: {\"email\":\"sumasomadas@gmail.com\",\"given\":\"suma\",\"family\":\"soma\",\"Github\":\"www.gmail.com\",\"Website\":\"www.gmail.com\",\"GPA\":\"3\",\"SectionID\":\"12356\"}","level":"info"}
+{"message":"SAVING UPDATED item {\"n\":1,\"nModified\":1,\"opTime\":{\"ts\":\"6766704297489989633\",\"t\":1},\"electionId\":\"7fffffff0000000000000001\",\"ok\":1,\"operationTime\":\"6766704297489989633\",\"$clusterTime\":{\"clusterTime\":\"6766704297489989633\",\"signature\":{\"hash\":\"DCHy6woXupGJF5pw8hppmj1DMaI=\",\"keyId\":\"6766262147786735617\"}}}","level":"info"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /instructor/edit/7","level":"debug"}
+{"message":"POST /instructor/save/7","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /instructor/edit/7","level":"debug"}
+{"message":"POST /instructor/save/7","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"Handling GET / [object Object]","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"Running on 3004","level":"info"}
+{"message":"Environment isProduction = true","level":"info"}
+{"message":"MongoDB URL = mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority","level":"info"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"MongoDB event open","level":"info"}
+{"message":"MongoDB connected mongodb+srv://sumasoma:sumasoma@cluster0-loknv.mongodb.net/test?retryWrites=true&w=majority\n","level":"info"}
+{"message":"Seeding collection = courses","level":"info"}
+{"message":"Seeding collection = instructors","level":"info"}
+{"message":"Seeding collection = sections","level":"info"}
+{"message":"Seeding collection = students","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /instructor/edit/7","level":"debug"}
+{"message":"POST /instructor/save/7","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
