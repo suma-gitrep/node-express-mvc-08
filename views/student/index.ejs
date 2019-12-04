@@ -14,25 +14,22 @@
       </p>
       <% for (let i = students.length-1; i >= 0; i--) {   
         student = students[i];   %>
-
       <div class="panel panel-default">
         <div class="panel-heading"></div>
         <div class="text-muted pull-right"></div>
         <div class="panel-body">
-
           <br> ID: <%=student._id %>
           <br> Email: <%=student.email %>
           <br> Given Name : <%=student.given %>
           <br> family Name: <%=student.family %>
-          <br> Github: <%=student.github %>
-          <br> Website: <%=student.website %>
-          <br> GPA: <%=student.gpa %>
-          <br> SectionID: <%=student.sectionid %>
-
+          <br> Github: <%=student.Github %>
+          <br> Website: <%=student.Website %>
+          <br> GPA: <%=student.GPA %>
+          <br> SectionID: <%=student.SectionID %>
           <hr>
           <a href="/student/delete/<%= student._id  %>" class="btn btn-danger"> Delete </a>
           <a href="/student/details/<%= student._id %>" class="btn btn-info"> Details </a>
-          <a href="/student/edit/<%= student._id %>" class="btn btn-primary"> Edit </a>
+          <a href="/student/edit/<%= student._id %>" class="btn btn-primary"> Edit </a> 
           <hr>
           <hr>
         </div>
