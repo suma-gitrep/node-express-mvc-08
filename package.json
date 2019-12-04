@@ -4,31 +4,29 @@
   "version": "1.0.0",
   "author": "Denise Case",
   "dependencies": {
+    "array-flatten": "latest",
+    "async": "latest",
     "body-parser": "latest",
-    "cookie-parser": "latest",
-    "debug": "latest",
-    "ejs": "latest",
-    "config": "latest",
+    "chalk": "latest",
     "consolidate": "latest",
+    "cookie-parser": "latest",
+    "dotenv": "^8.2.0",
+    "ejs": "2.7.2",
+    "errorhandler": "^1.5.1",
     "express": "latest",
     "express-ejs-layouts": "latest",
+    "express-validator": "^6.3.0",
     "helmet": "latest",
     "lodash": "latest",
     "lodash.find": "latest",
+    "mongodb": "^3.2.3",
     "mongoose": "latest",
-    "nedb": "latest",
     "morgan": "latest",
-    "serve-favicon": "latest"
-  },
-  "devDependencies": {
-    "eslint": "latest",
-    "eslint-config-standard": "latest",
-    "eslint-plugin-import": "latest",
-    "eslint-plugin-node": "latest",
-    "eslint-plugin-promise": "latest",
-    "eslint-plugin-standard": "latest",
-    "eslint-plugin-vue": "latest",
-    "nodemon": "latest"
+    "path": "^0.12.7",
+    "request": "latest",
+    "serve-favicon": "^2.5.0",
+    "sort-package-json": "latest",
+    "winston": "^3.2.1"
   },
   "keywords": [
     "Express.js",
@@ -45,7 +43,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/denisecase/node-express-mvc"
+    "url": "https://github.com/suma-gitrep/mvc-app"
   },
   "scripts": {
     "pre": "eslint .\\",

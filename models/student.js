@@ -6,7 +6,7 @@
 * @requires mongoose
 *
 */
-  const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 
 const studentSchema = new mongoose.Schema({
 
@@ -35,7 +35,7 @@ const studentSchema = new mongoose.Schema({
     required: false,
     default: 'Family name'
   },
-  GitHub: {
+  Github: {
     type: String,
     minlength: 3,
     maxlength: 100,

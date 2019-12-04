@@ -1,0 +1,112 @@
+[
+    {
+      "_id": 90,
+      "email": "s536881@nwmissouri.edu",
+      "given": "Hareesh",
+      "family": "Bhuma",
+      "Github": "HareeshBhuma",
+      "Website": "www.bhuma.com",
+      "GPA": 8.99,
+      "SectionID": 1001
+      
+    },
+    {
+        "_id": 91,
+        "email": "bhuma@nwmissouri.edu",
+        "given": "Hareesh",
+        "family": "Bhuma",
+        "Github": "BhumaHareesh",
+        "Website": "www.Hareesh.com",
+        "GPA": 8.1,
+        "SectionID": 1002
+    },
+    {
+        "_id": 92,
+        "email": "surya@nwmissouri.edu",
+        "given": "surya",
+        "family": "Bhoopathi",
+        "Github": "SuryaItzABrand",
+        "Website": "www.Surya.com",
+        "GPA": 8.02,
+        "SectionID": 1003
+        
+      },
+      {
+        "_id": 93,
+        "email": "Sandeep@nwmissouri.edu",
+        "given": "sandeep",
+        "family": "Chitirala",
+        "Github": "sandeepchitirala",
+        "Website": "www.chiti.com",
+        "GPA": 6.5,
+        "SectionID": 1004
+        
+      },
+      {
+        "_id": 94,
+        "email": "Abbas@nwmissouri.edu",
+        "given": "Abbas",
+        "family": "Huseini",
+        "Github": "AbbasHuseini",
+        "Website": "www.abbas.com",
+        "GPA": 9.99,
+        "SectionID": 1005
+        
+      },
+      {
+        "_id": 95,
+        "email": "lokesh@nwmissouri.edu",
+        "given": "lokesh",
+        "family": "pratap",
+        "Github": "lokeshpratap",
+        "Website": "www.lokesh.com",
+        "GPA": 6.49,
+        "SectionID": 1006
+        
+      },
+      {
+        "_id": 96,
+        "email": "maram@nwmissouri.edu",
+        "given": "maram",
+        "family": "suman",
+        "Github": "maramsuman",
+        "Website": "www.maram.com",
+        "GPA": 7.99,
+        "SectionID": 1005
+        
+      },
+      {
+        "_id": 97,
+        "email": "vinay@nwmissouri.edu",
+        "given": "vinay",
+        "family": "paruchuri",
+        "Github": "vinayParuchuri",
+        "Website": "www.vinay.com",
+        "GPA": 6.49,
+        "SectionID": 1006
+        
+      },
+      {
+        "_id": 98,
+        "email": "raghu@nwmissouri.edu",
+        "given": "raghu",
+        "family": "legend",
+        "Github": "Raghulegend",
+        "Website": "www.raghu.com",
+        "GPA": 5.99,
+        "SectionID": 1003
+        
+      },
+      {
+        "_id": 99,
+        "email": "ravi@nwmissouri.edu",
+        "given": "ravi",
+        "family": "brand",
+        "Github": "Ravibrand",
+        "Website": "www.Brand.com",
+        "GPA": 9.99,
+        "SectionID": 1002
+        
+      }
+      
+  ]
