@@ -6,9 +6,9 @@
 * @requires mongoose
 *
 */
-const mongoose = require('mongoose')
+  const mongoose = require('mongoose')
 
-const StudentSchema = new mongoose.Schema({
+const studentSchema = new mongoose.Schema({
 
   _id: {
     type: Number,
@@ -35,32 +35,32 @@ const StudentSchema = new mongoose.Schema({
     required: false,
     default: 'Family name'
   },
-  gpa: {
-    type: Number,
+  GitHub: {
+    type: String,
+    minlength: 3,
+    maxlength: 100,
     required: true
-  },
-  github: {
-    type: String,
-    minlength: 8,
-    maxlength: 100,
-    required: true,
-    default: 'https://github.com/'
-  },
-  website: {
-    type: String,
-    minlength: 8,
-    maxlength: 12,
-    required: true,
-    default: 'ttps://website.com/'
-  },
-  sectionid: {
-    type: String,
-    minlength: 5,
-    maxlength: 100,
-    required: true,
     
-  }
+  },
+  Website: {
+    type: String,
+    minlength: 2,
+    maxlength: 100,
+    required: true
+    
+  },
+  GPA: {
+      type : Number,
+      minlength: 2,
+      maxlength: 5,
+      required: true
+  },
+
+  SectionID: {
+    type : Number,
+    
+    required: true
+}
 
 })
-module.exports = mongoose.model('Student', StudentSchema)
-// the model Developer is for the developers collection in the database.
+module.exports = mongoose.model('student', studentSchema)
