@@ -53,5 +53,5 @@ const CourseSchema = new mongoose.Schema({
   }
 
 })
-module.exports = mongoose.model('Course', CourseSchema)
+module.exports = mongoose.model('course', CourseSchema)
 // the model Developer is for the developers collection in the database.

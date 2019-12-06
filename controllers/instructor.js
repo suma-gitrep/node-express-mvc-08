@@ -107,7 +107,7 @@ api.post('/save', (req, res) => {
   item.Family = req.body.Family
   item.Salary = req.body.Salary
   item.GitHub = req.body.GitHub
-  console.log(item);
+  //console.log(item);
 
   item.save((err) => {
     console.log(err);
